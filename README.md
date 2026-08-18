@@ -12,4 +12,7 @@ Things you can set up in genral.json <br>
     --reading path and saving type document .mdox 
     --
 
+lista de cosas por hacer
+
+- [x] Escribir el borrador
 :)
