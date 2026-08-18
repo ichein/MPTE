@@ -15,7 +15,11 @@ lista de cosas por hacer
 - [] Escribir el borrador <br>
 - [] desarrollar el .mdox <br>
 - [] estetica completa <br>
+- [] edicion de texto <br>
+- [] edicion de hoja <br>
+- [] capacidad de incertar "cosas" <br>
 - [] capacidad de exportacion a otros formatos <br>
 - [] menu completo <br>
 - [] personalizacion en pagina <br>
+- [] opcciones avanzadas de la oja <br>
 :)
