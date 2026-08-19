@@ -2,10 +2,28 @@
     background-color: #a3d9ff;
 }
 
+.content_conteiner{
+    background-color: red;
+    display: flex;
+}
+
 .lateral_bar{
     background-color: #a3d9aa;
+    padding: 20px;
+    width: 200px;
 }
 
 .body{
     background-color: #befccd   ;
+    flex: 1;
+    padding: 20px;
+}
+
+.paper{
+    width: 794px;
+    height: 1123px;
+    margin: 0 auto;
+    /*justify-content: center;*/
+    background-color: #feffe1;
+    padding: 20px;
 }
