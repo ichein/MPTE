@@ -23,3 +23,5 @@ lista de cosas por hacer
 - [ ] personalizacion en pagina <br>
 - [ ] opcciones avanzadas de la oja <br>
 :)
+
+ontainer.js Requiere: npm install fflate
