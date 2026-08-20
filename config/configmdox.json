@@ -1,0 +1,25 @@
+{
+    "mdox_version":"0.1",
+    "modifiers": {
+        "bold":      { "open": "】",  "close": "】" },
+        "italic":    { "open": "【",  "close": "【" },
+        "strike":    { "open": "々",  "close": "々" },
+        "underline": { "open": "〇",  "close": "〇" },
+        "highlight": { "open": "〆",  "close": "〆" },
+        "font":      { "open":["〰","font.arial","〺"], "close":"〰"},
+        "font_size": { "open":["〻","12","〹"], "close":"〻"},
+        "background_color":{ "open": ["〠","colors.white", "〨"],  "close": "〠" },
+        "color":     { "open": ["〒","colors.black", "〩"],  "close": "〒" }
+    },
+    "colors":{
+        "white"       : "#ffffff",
+        "black"       : "#000000",
+        "red"         : "#ff0000",
+        "green"       : "#00ff00",
+        "blue"        : "#0000ff",
+        "purple"      : "#ff00ff",
+        "yellow"      : "#ffff00",
+        "Perzonalized": "color_list.1"
+    },
+    "escape": "〽〽"
+}
