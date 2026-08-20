@@ -24,4 +24,4 @@ lista de cosas por hacer
 - [ ] opcciones avanzadas de la oja <br>
 :)
 
-ontainer.js Requiere: npm install fflate
+container.js Requiere: npm install fflate
