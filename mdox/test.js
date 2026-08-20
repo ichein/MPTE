@@ -4,7 +4,8 @@ const {tokenize} = require('../mdox/tokenizer.js');
 const {serialize} = require('../mdox/serializer.js');
 const {parse} = require('../mdox/parser.js');
 
-const configmdox = JSON.parse(fs.readFileSync(__dirname + '/config/configmdox.json', 'utf-8'));
+const configPath = require('path').resolve(__dirname, '../config/configmdox.json');
+const configmdox = JSON.parse(fs.readFileSync(configPath, 'utf-8'));
 const symbol_table = load_symbols_table(configmdox);
 
 const cases = [
@@ -15,7 +16,7 @@ const cases = [
     "】Negrita que contiene 〒blue〩texto azul〒 y sigue en negrita】",
     "〻20〹Texto con tamaño 20〻 normal después.",
     "Precio: 20% de descuento (el símbolo % no está definido, debe quedar intacto).",
-    "Escapando un símbolo literal: \\】 esto no debería abrir negrita.",
+    "Escapando un símbolo literal: 〽〽】 esto no debería abrir negrita.",
     "〠yellow〨Fondo amarillo〠 normal.",
 ];
 

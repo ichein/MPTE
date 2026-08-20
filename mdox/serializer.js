@@ -8,27 +8,27 @@ function serialize(ast_node, symbol_table){
     }
     function escape_text(value){
         let out = "";
-        for (const ch of value){
-            if (need_escaping(ch)) out += escape_char;
-            out += ch
+        for (const ch of value) {
+            if (need_escaping(ch)) out += escape;
+            out += ch;
         }
         return out;
     }
     function serialize_node(node){
-        if (node.kind === "text"){
+        if (node.kind === "text") {
             return escape_text(node.value);
         }
-        if (node.kind === "root"){
+        if (node.kind === "root") {
             return node.children.map(serialize_node).join("");
         }
-        if (node.kind === "mark"){
+        if (node.kind === "mark") {
             const def = raw_config.modifiers[node.type];
             const inner = node.children.map(serialize_node).join("");
-            if (array.isarray(def.open)){
-                const [prefix, suffix] = def.open;
-                const param_value = node.param !== undefined ? node.param: "";
+            if (Array.isArray(def.open)) {
+                const [prefix, default_ref, suffix] = def.open;
+                const param_value = node.param !== undefined ? node.param : default_ref;
                 return `${prefix}${param_value}${suffix}${inner}${def.close}`;
-            }else{
+            } else {
                 return `${def.open}${inner}${def.close}`;
             }
         }
