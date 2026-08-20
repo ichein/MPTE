@@ -17,9 +17,25 @@
         "red"         : "#ff0000",
         "green"       : "#00ff00",
         "blue"        : "#0000ff",
-        "purple"      : "#ff00ff",
+        "pink"        : "#ff00ff",
+        "purple"      : "#b525b5",
+        "orange"      : "#ff7700",
         "yellow"      : "#ffff00",
         "Perzonalized": "color_list.1"
     },
+    "color_list":{
+        "1":"",
+        "2":"",
+        "3":"",
+        "4":"",
+        "5":"",
+        "6":"",
+        "7":"",
+        "8":"",
+        "9":"",
+        "10":""
+    },
+    "fonts":[],
+    "max_color_list":"10",
     "escape": "〽〽"
 }
